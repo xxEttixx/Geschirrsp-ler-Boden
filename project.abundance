@@ -163,8 +163,8 @@
         {
             "atomType": "Fusion",
             "name": "Fusion",
-            "x": 0.5595549738219895,
-            "y": 0.8149253731343283,
+            "x": 0.5680628272251309,
+            "y": 0.7671641791044775,
             "uniqueID": "6cdd5bb5-89a5-417d-9916-0d8d3f97015b",
             "ioValues": [
                 {
@@ -192,7 +192,7 @@
                 },
                 {
                     "name": "y length",
-                    "ioValue": 28
+                    "ioValue": 29
                 }
             ],
             "description": "Creates a new rectangle."
