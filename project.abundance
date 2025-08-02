@@ -43,13 +43,13 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.6734293193717278,
-            "y": 0.5164179104477612,
+            "x": 0.7277486910994765,
+            "y": 0.5223880597014925,
             "uniqueID": "118a54f3-7899-49ca-99ca-1af54047e56a",
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "e542a023-4a47-46d1-a4c6-a10ef2474119"
+                    "ioValue": "49d13667-244c-46eb-bbcb-e2f3bb404ecb"
                 },
                 {
                     "name": "height",
@@ -61,13 +61,17 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.47643979057591623,
-            "y": 0.5104477611940299,
+            "x": 0.4175392670157068,
+            "y": 0.26865671641791045,
             "uniqueID": "e542a023-4a47-46d1-a4c6-a10ef2474119",
             "ioValues": [
                 {
                     "name": "geometry1",
                     "ioValue": "eea29472-db3f-4b57-906d-142def70f746"
+                },
+                {
+                    "name": "geometry2",
+                    "ioValue": ""
                 }
             ],
             "description": "Subtracts shape two from shape one."
@@ -289,6 +293,34 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": {}
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.4096858638743455,
+            "y": 0.7940298507462686,
+            "uniqueID": "395dedc9-3833-463e-aa57-ae8dd171fc1c",
+            "ioValues": [],
+            "description": "Changes the color of the shape.",
+            "selectedColorIndex": 22
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.5909685863874345,
+            "y": 0.5014925373134328,
+            "uniqueID": "49d13667-244c-46eb-bbcb-e2f3bb404ecb",
+            "ioValues": [
+                {
+                    "name": "Shape 3",
+                    "ioValue": "e542a023-4a47-46d1-a4c6-a10ef2474119"
+                },
+                {
+                    "name": "Shape 4",
+                    "ioValue": null
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
         }
     ],
     "allConnectors": [
@@ -308,17 +340,31 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
+            "ap2Name": "Shape 3",
+            "ap2Primary": false,
             "ap1ID": "e542a023-4a47-46d1-a4c6-a10ef2474119",
-            "ap2ID": "118a54f3-7899-49ca-99ca-1af54047e56a"
+            "ap2ID": "49d13667-244c-46eb-bbcb-e2f3bb404ecb"
         },
         {
             "ap1Name": "Geometry",
-            "ap2Name": "geometry2",
-            "ap2Primary": false,
+            "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": "b9717d10-a789-4754-939e-3036640f4968",
-            "ap2ID": "e542a023-4a47-46d1-a4c6-a10ef2474119"
+            "ap2ID": "395dedc9-3833-463e-aa57-ae8dd171fc1c"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 4",
+            "ap2Primary": false,
+            "ap1ID": "395dedc9-3833-463e-aa57-ae8dd171fc1c",
+            "ap2ID": "49d13667-244c-46eb-bbcb-e2f3bb404ecb"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "49d13667-244c-46eb-bbcb-e2f3bb404ecb",
+            "ap2ID": "118a54f3-7899-49ca-99ca-1af54047e56a"
         }
     ],
     "unitsKey": "MM",
