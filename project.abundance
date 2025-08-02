@@ -30,8 +30,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.2604712041884817,
-            "y": 0.21194029850746268,
+            "x": 0.2650523560209424,
+            "y": 0.13432835820895522,
             "uniqueID": "eea29472-db3f-4b57-906d-142def70f746",
             "ioValues": [
                 {
@@ -66,8 +66,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.4175392670157068,
-            "y": 0.26865671641791045,
+            "x": 0.42081151832460734,
+            "y": 0.17611940298507464,
             "uniqueID": "e542a023-4a47-46d1-a4c6-a10ef2474119",
             "ioValues": [
                 {
@@ -84,8 +84,8 @@
         {
             "atomType": "Molecule",
             "name": "Ausschnitt",
-            "x": 0.25981675392670156,
-            "y": 0.5671641791044776,
+            "x": 0.26767015706806285,
+            "y": 0.42388059701492536,
             "uniqueID": "b9717d10-a789-4754-939e-3036640f4968",
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -314,8 +314,8 @@
         {
             "atomType": "Color",
             "name": "Color",
-            "x": 0.4221204188481676,
-            "y": 0.5761194029850747,
+            "x": 0.424738219895288,
+            "y": 0.4149253731343283,
             "uniqueID": "395dedc9-3833-463e-aa57-ae8dd171fc1c",
             "ioValues": [
                 {
@@ -329,8 +329,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.5909685863874345,
-            "y": 0.5014925373134328,
+            "x": 0.6073298429319371,
+            "y": 0.29253731343283584,
             "uniqueID": "49d13667-244c-46eb-bbcb-e2f3bb404ecb",
             "ioValues": [
                 {
@@ -353,6 +353,48 @@
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
             "type": "number"
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Eisenwinkel",
+            "x": 0.25785340314136124,
+            "y": 0.6805970149253732,
+            "uniqueID": "6e2c1001-e68c-4a3f-b0a0-2cc95ca9dcdc",
+            "ioValues": [],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": "6297006a-bb27-42f3-ada5-fbea323f7f04",
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.2356020942408377,
+                    "y": 0.4417910447761194,
+                    "uniqueID": "e80ce0c5-1d9a-43b1-b597-b99ab5ff595e",
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Creates a new rectangle."
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
     "allConnectors": [
