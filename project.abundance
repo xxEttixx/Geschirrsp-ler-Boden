@@ -30,8 +30,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.2264397905759162,
-            "y": 0.15223880597014927,
+            "x": 0.2198952879581152,
+            "y": 0.11940298507462686,
             "uniqueID": "eea29472-db3f-4b57-906d-142def70f746",
             "ioValues": [
                 {
@@ -357,8 +357,8 @@
         {
             "atomType": "Molecule",
             "name": "Eisenwinkel",
-            "x": 0.22185863874345552,
-            "y": 0.8686567164179105,
+            "x": 0.22251308900523561,
+            "y": 0.7880597014925372,
             "uniqueID": "6e2c1001-e68c-4a3f-b0a0-2cc95ca9dcdc",
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -477,8 +477,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.4712041884816754,
-            "y": 0.8328358208955224,
+            "x": 0.4967277486910994,
+            "y": 0.7761194029850745,
             "uniqueID": "a2c53bd4-8c28-439c-95c4-2806bdf318f4",
             "ioValues": [
                 {
@@ -503,8 +503,8 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.3717277486910995,
-            "y": 0.8417910447761194,
+            "x": 0.37434554973821993,
+            "y": 0.7731343283582089,
             "uniqueID": "c4ea16f7-d1e2-4c2a-a0d3-b2f0a0c5b27d",
             "ioValues": [
                 {
@@ -521,10 +521,62 @@
                 },
                 {
                     "name": "z-axis degrees",
-                    "ioValue": 90
+                    "ioValue": "6e2c1001-e68c-4a3f-b0a0-2cc95ca9dcdc"
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.3763089005235602,
+            "y": 0.9492537313432835,
+            "uniqueID": "6845c2d0-6954-4aad-b9cf-92f1c67d6c6d",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "6e2c1001-e68c-4a3f-b0a0-2cc95ca9dcdc"
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.5026178010471204,
+            "y": 0.9462686567164178,
+            "uniqueID": "a89227d3-017b-4a06-8d15-6d6bd5bceb22",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": ""
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
@@ -583,6 +635,20 @@
             "ap2Primary": true,
             "ap1ID": "6e2c1001-e68c-4a3f-b0a0-2cc95ca9dcdc",
             "ap2ID": "c4ea16f7-d1e2-4c2a-a0d3-b2f0a0c5b27d"
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "z-axis degrees",
+            "ap2Primary": false,
+            "ap1ID": "6e2c1001-e68c-4a3f-b0a0-2cc95ca9dcdc",
+            "ap2ID": "c4ea16f7-d1e2-4c2a-a0d3-b2f0a0c5b27d"
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "6e2c1001-e68c-4a3f-b0a0-2cc95ca9dcdc",
+            "ap2ID": "6845c2d0-6954-4aad-b9cf-92f1c67d6c6d"
         },
         {
             "ap1Name": "geometry",
