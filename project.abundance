@@ -49,7 +49,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "e542a023-4a47-46d1-a4c6-a10ef2474119"
+                    "ioValue": "387e8408-f6ff-4173-be24-64396118e69b"
                 },
                 {
                     "name": "height",
@@ -188,11 +188,11 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 10
+                    "ioValue": 5
                 },
                 {
                     "name": "y length",
-                    "ioValue": 30
+                    "ioValue": 28
                 }
             ],
             "description": "Creates a new rectangle."
@@ -210,11 +210,11 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": -25
+                    "ioValue": -20
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 25
+                    "ioValue": 23
                 },
                 {
                     "name": "zDist",
@@ -222,6 +222,25 @@
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Fusion",
+            "name": "Fusion",
+            "x": 0.6662303664921465,
+            "y": 0.5761194029850747,
+            "uniqueID": "387e8408-f6ff-4173-be24-64396118e69b",
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": "e542a023-4a47-46d1-a4c6-a10ef2474119"
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": "6cdd5bb5-89a5-417d-9916-0d8d3f97015b"
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+            "unionType": "Fusion"
         }
     ],
     "allConnectors": [
@@ -248,10 +267,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
             "ap1ID": "e542a023-4a47-46d1-a4c6-a10ef2474119",
-            "ap2ID": "118a54f3-7899-49ca-99ca-1af54047e56a"
+            "ap2ID": "387e8408-f6ff-4173-be24-64396118e69b"
         },
         {
             "ap1Name": "geometry",
@@ -276,6 +295,13 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": "6cdd5bb5-89a5-417d-9916-0d8d3f97015b",
+            "ap2ID": "387e8408-f6ff-4173-be24-64396118e69b"
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": "0c8d1773-7204-4f52-a160-610f34e7a4d4",
@@ -287,6 +313,13 @@
             "ap2Primary": false,
             "ap1ID": "1442d302-b14d-417f-8dc4-8ceaed74c4cf",
             "ap2ID": "6cdd5bb5-89a5-417d-9916-0d8d3f97015b"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "387e8408-f6ff-4173-be24-64396118e69b",
+            "ap2ID": "118a54f3-7899-49ca-99ca-1af54047e56a"
         }
     ],
     "unitsKey": "MM",
