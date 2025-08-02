@@ -92,7 +92,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "6388fe5d-6108-47d4-a557-8a89eb8c71fa",
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "cbcb1efb-6cea-4582-9af7-a1d28150c43a"
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -264,6 +269,13 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": "cbcb1efb-6cea-4582-9af7-a1d28150c43a",
+                    "ap2ID": "6388fe5d-6108-47d4-a557-8a89eb8c71fa"
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": "9cbaa64a-2740-476e-aeac-d6dacc33ed83",
@@ -300,7 +312,12 @@
             "x": 0.4096858638743455,
             "y": 0.7940298507462686,
             "uniqueID": "395dedc9-3833-463e-aa57-ae8dd171fc1c",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "b9717d10-a789-4754-939e-3036640f4968"
+                }
+            ],
             "description": "Changes the color of the shape.",
             "selectedColorIndex": 22
         },
@@ -317,7 +334,7 @@
                 },
                 {
                     "name": "Shape 4",
-                    "ioValue": null
+                    "ioValue": "395dedc9-3833-463e-aa57-ae8dd171fc1c"
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
