@@ -1,16 +1,157 @@
 {
     "atomType": "Molecule",
-    "name": "Geschirrspüler Boden",
+    "name": "Geschirrsp-ler-Boden",
     "x": 0,
     "y": 0,
     "uniqueID": "1f5d8d90-ce1f-4384-b62f-8145a3e91ac7",
     "ioValues": [],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": "d7070de1-c07a-4126-9f76-5b4a4bfb1ff4",
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "118a54f3-7899-49ca-99ca-1af54047e56a"
+                }
+            ],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.4345549738219895,
+            "y": 0.28656716417910444,
+            "uniqueID": "eea29472-db3f-4b57-906d-142def70f746",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 60
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 80
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.5732984293193717,
+            "y": 0.28059701492537314,
+            "uniqueID": "118a54f3-7899-49ca-99ca-1af54047e56a",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "eea29472-db3f-4b57-906d-142def70f746"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 3
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.2414921465968586,
+            "y": 0.7402985074626866,
+            "uniqueID": "e13e1941-3fce-4e80-a857-62fb5c3a1851",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 10
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 30
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.6806282722513088,
+            "y": 0.5373134328358209,
+            "uniqueID": "e542a023-4a47-46d1-a4c6-a10ef2474119",
+            "ioValues": [
+                {
+                    "name": "geometry1",
+                    "ioValue": "118a54f3-7899-49ca-99ca-1af54047e56a"
+                },
+                {
+                    "name": "geometry2",
+                    "ioValue": "995cfd49-b647-4890-899b-d98ab32cf033"
+                }
+            ],
+            "description": "Subtracts shape two from shape one."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.5242146596858639,
+            "y": 0.7223880597014926,
+            "uniqueID": "995cfd49-b647-4890-899b-d98ab32cf033",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "e13e1941-3fce-4e80-a857-62fb5c3a1851"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 3
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "eea29472-db3f-4b57-906d-142def70f746",
+            "ap2ID": "118a54f3-7899-49ca-99ca-1af54047e56a"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "118a54f3-7899-49ca-99ca-1af54047e56a",
+            "ap2ID": "d7070de1-c07a-4126-9f76-5b4a4bfb1ff4"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": "118a54f3-7899-49ca-99ca-1af54047e56a",
+            "ap2ID": "e542a023-4a47-46d1-a4c6-a10ef2474119"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "e13e1941-3fce-4e80-a857-62fb5c3a1851",
+            "ap2ID": "995cfd49-b647-4890-899b-d98ab32cf033"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": "995cfd49-b647-4890-899b-d98ab32cf033",
+            "ap2ID": "e542a023-4a47-46d1-a4c6-a10ef2474119"
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
