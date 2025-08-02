@@ -17,7 +17,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "118a54f3-7899-49ca-99ca-1af54047e56a"
+                    "ioValue": "e542a023-4a47-46d1-a4c6-a10ef2474119"
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -61,8 +61,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.2414921465968586,
-            "y": 0.7402985074626866,
+            "x": 0.18586387434554974,
+            "y": 0.7104477611940297,
             "uniqueID": "e13e1941-3fce-4e80-a857-62fb5c3a1851",
             "ioValues": [
                 {
@@ -103,7 +103,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "e13e1941-3fce-4e80-a857-62fb5c3a1851"
+                    "ioValue": "67c55188-3723-44ba-82a5-145fe1cbaf7d"
                 },
                 {
                     "name": "height",
@@ -111,6 +111,32 @@
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.37892670157068065,
+            "y": 0.7044776119402986,
+            "uniqueID": "67c55188-3723-44ba-82a5-145fe1cbaf7d",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "e13e1941-3fce-4e80-a857-62fb5c3a1851"
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": -25
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 30
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
@@ -120,13 +146,6 @@
             "ap2Primary": true,
             "ap1ID": "eea29472-db3f-4b57-906d-142def70f746",
             "ap2ID": "118a54f3-7899-49ca-99ca-1af54047e56a"
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": "118a54f3-7899-49ca-99ca-1af54047e56a",
-            "ap2ID": "d7070de1-c07a-4126-9f76-5b4a4bfb1ff4"
         },
         {
             "ap1Name": "geometry",
@@ -140,7 +159,14 @@
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": "e13e1941-3fce-4e80-a857-62fb5c3a1851",
-            "ap2ID": "995cfd49-b647-4890-899b-d98ab32cf033"
+            "ap2ID": "67c55188-3723-44ba-82a5-145fe1cbaf7d"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "e542a023-4a47-46d1-a4c6-a10ef2474119",
+            "ap2ID": "d7070de1-c07a-4126-9f76-5b4a4bfb1ff4"
         },
         {
             "ap1Name": "geometry",
@@ -148,6 +174,13 @@
             "ap2Primary": false,
             "ap1ID": "995cfd49-b647-4890-899b-d98ab32cf033",
             "ap2ID": "e542a023-4a47-46d1-a4c6-a10ef2474119"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "67c55188-3723-44ba-82a5-145fe1cbaf7d",
+            "ap2ID": "995cfd49-b647-4890-899b-d98ab32cf033"
         }
     ],
     "unitsKey": "MM",
