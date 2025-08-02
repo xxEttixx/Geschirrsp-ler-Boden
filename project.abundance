@@ -472,7 +472,7 @@
                     "ioValue": "a2c53bd4-8c28-439c-95c4-2806bdf318f4"
                 },
                 {
-                    "name": "Shape 6",
+                    "name": "Shape 7",
                     "ioValue": "a89227d3-017b-4a06-8d15-6d6bd5bceb22"
                 }
             ],
@@ -507,8 +507,8 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.38481675392670156,
-            "y": 0.5970149253731343,
+            "x": 0.40314136125654454,
+            "y": 0.6029850746268657,
             "uniqueID": "c4ea16f7-d1e2-4c2a-a0d3-b2f0a0c5b27d",
             "ioValues": [
                 {
@@ -525,7 +525,7 @@
                 },
                 {
                     "name": "z-axis degrees",
-                    "ioValue": "6e2c1001-e68c-4a3f-b0a0-2cc95ca9dcdc"
+                    "ioValue": 90
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
@@ -533,8 +533,8 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.38285340314136124,
-            "y": 0.808955223880597,
+            "x": 0.3730366492146597,
+            "y": 0.8776119402985074,
             "uniqueID": "6845c2d0-6954-4aad-b9cf-92f1c67d6c6d",
             "ioValues": [
                 {
@@ -642,13 +642,6 @@
         },
         {
             "ap1Name": "Geometry",
-            "ap2Name": "z-axis degrees",
-            "ap2Primary": false,
-            "ap1ID": "6e2c1001-e68c-4a3f-b0a0-2cc95ca9dcdc",
-            "ap2ID": "c4ea16f7-d1e2-4c2a-a0d3-b2f0a0c5b27d"
-        },
-        {
-            "ap1Name": "Geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": "6e2c1001-e68c-4a3f-b0a0-2cc95ca9dcdc",
@@ -684,7 +677,7 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 6",
+            "ap2Name": "Shape 7",
             "ap2Primary": false,
             "ap1ID": "a89227d3-017b-4a06-8d15-6d6bd5bceb22",
             "ap2ID": "76fb1594-e3c0-4b88-9e09-df47f5e2bc62"
