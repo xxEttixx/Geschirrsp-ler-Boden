@@ -364,7 +364,20 @@
             "x": 0.15706806282722513,
             "y": 0.6388059701492538,
             "uniqueID": "6e2c1001-e68c-4a3f-b0a0-2cc95ca9dcdc",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Winkelbreite",
+                    "ioValue": 6.5
+                },
+                {
+                    "name": "Winkellänge",
+                    "ioValue": 9
+                },
+                {
+                    "name": "Input (1)",
+                    "ioValue": 10
+                }
+            ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
             "topLevel": false,
             "allAtoms": [
@@ -385,8 +398,8 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.206151832460733,
-                    "y": 0.4417910447761194,
+                    "x": 0.2198952879581152,
+                    "y": 0.43582089552238806,
                     "uniqueID": "e80ce0c5-1d9a-43b1-b597-b99ab5ff595e",
                     "ioValues": [
                         {
@@ -414,6 +427,54 @@
                     ],
                     "description": "Changes the color of the shape.",
                     "selectedColorIndex": 22
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Winkelbreite",
+                    "x": 0.025384615384615384,
+                    "y": 0.3283582089552239,
+                    "uniqueID": "bf26e3e0-7d93-48b1-ad08-1f0f17635732",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Winkellänge",
+                    "x": 0.025384615384615384,
+                    "y": 0.6388059701492538,
+                    "uniqueID": "26ef735d-2cb5-4be2-bbb1-42a140742a85",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.38219895287958117,
+                    "y": 0.808955223880597,
+                    "uniqueID": "b85bed40-3884-4661-b03c-5c009e1ff116",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": ""
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Input (1)",
+                    "x": 0.025384615384615384,
+                    "y": 0.7940298507462686,
+                    "uniqueID": "b427376f-bff7-4a01-903e-c01c0d9eab47",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
                 }
             ],
             "allConnectors": [
@@ -430,6 +491,20 @@
                     "ap2Primary": false,
                     "ap1ID": "f3e113c2-5870-48a2-986d-31c8b015555f",
                     "ap2ID": "6297006a-bb27-42f3-ada5-fbea323f7f04"
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x length",
+                    "ap2Primary": false,
+                    "ap1ID": "bf26e3e0-7d93-48b1-ad08-1f0f17635732",
+                    "ap2ID": "e80ce0c5-1d9a-43b1-b597-b99ab5ff595e"
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "y length",
+                    "ap2Primary": false,
+                    "ap1ID": "26ef735d-2cb5-4be2-bbb1-42a140742a85",
+                    "ap2ID": "e80ce0c5-1d9a-43b1-b597-b99ab5ff595e"
                 }
             ],
             "fileTypeVersion": 1,
@@ -560,8 +635,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.6675392670157068,
-            "y": 0.8835820895522388,
+            "x": 0.668848167539267,
+            "y": 0.9014925373134328,
             "uniqueID": "17f2dd76-46d4-4358-b21a-dd231bd71d86",
             "ioValues": [
                 {
