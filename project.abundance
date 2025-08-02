@@ -8,6 +8,10 @@
         {
             "name": "Brett Dicke",
             "ioValue": 3
+        },
+        {
+            "name": "Winkelhöhe",
+            "ioValue": 0.2
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -373,7 +377,7 @@
                     "ioValues": [
                         {
                             "name": "number or geometry",
-                            "ioValue": "2bcf569b-61e9-4c8e-abd3-0f51eac654b7"
+                            "ioValue": "f3e113c2-5870-48a2-986d-31c8b015555f"
                         }
                     ],
                     "description": "Connect geometry here to make it available in the next level up. "
@@ -395,24 +399,6 @@
                         }
                     ],
                     "description": "Creates a new rectangle."
-                },
-                {
-                    "atomType": "Extrude",
-                    "name": "Extrude",
-                    "x": 0.4842931937172775,
-                    "y": 0.4298507462686567,
-                    "uniqueID": "2bcf569b-61e9-4c8e-abd3-0f51eac654b7",
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": "f3e113c2-5870-48a2-986d-31c8b015555f"
-                        },
-                        {
-                            "name": "height",
-                            "ioValue": 0.2
-                        }
-                    ],
-                    "description": "Extrudes a 2D shape. Input can be negitive. "
                 },
                 {
                     "atomType": "Color",
@@ -442,15 +428,8 @@
                     "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
                     "ap2Primary": false,
-                    "ap1ID": "2bcf569b-61e9-4c8e-abd3-0f51eac654b7",
-                    "ap2ID": "6297006a-bb27-42f3-ada5-fbea323f7f04"
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
                     "ap1ID": "f3e113c2-5870-48a2-986d-31c8b015555f",
-                    "ap2ID": "2bcf569b-61e9-4c8e-abd3-0f51eac654b7"
+                    "ap2ID": "6297006a-bb27-42f3-ada5-fbea323f7f04"
                 }
             ],
             "fileTypeVersion": 1,
@@ -459,8 +438,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.712041884816754,
-            "y": 0.5582089552238806,
+            "x": 0.7198952879581152,
+            "y": 0.5164179104477612,
             "uniqueID": "76fb1594-e3c0-4b88-9e09-df47f5e2bc62",
             "ioValues": [
                 {
@@ -468,12 +447,8 @@
                     "ioValue": "118a54f3-7899-49ca-99ca-1af54047e56a"
                 },
                 {
-                    "name": "Shape 5",
-                    "ioValue": "a2c53bd4-8c28-439c-95c4-2806bdf318f4"
-                },
-                {
-                    "name": "Shape 7",
-                    "ioValue": "a89227d3-017b-4a06-8d15-6d6bd5bceb22"
+                    "name": "Shape 8",
+                    "ioValue": "17f2dd76-46d4-4358-b21a-dd231bd71d86"
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -481,8 +456,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.5039267015706806,
-            "y": 0.5462686567164179,
+            "x": 0.47643979057591623,
+            "y": 0.591044776119403,
             "uniqueID": "a2c53bd4-8c28-439c-95c4-2806bdf318f4",
             "ioValues": [
                 {
@@ -507,8 +482,8 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.40314136125654454,
-            "y": 0.6029850746268657,
+            "x": 0.34554973821989526,
+            "y": 0.5970149253731343,
             "uniqueID": "c4ea16f7-d1e2-4c2a-a0d3-b2f0a0c5b27d",
             "ioValues": [
                 {
@@ -533,7 +508,7 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.3730366492146597,
+            "x": 0.3488219895287958,
             "y": 0.8776119402985074,
             "uniqueID": "6845c2d0-6954-4aad-b9cf-92f1c67d6c6d",
             "ioValues": [
@@ -559,8 +534,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.5098167539267016,
-            "y": 0.8597014925373134,
+            "x": 0.4738219895287958,
+            "y": 0.8776119402985074,
             "uniqueID": "a89227d3-017b-4a06-8d15-6d6bd5bceb22",
             "ioValues": [
                 {
@@ -581,6 +556,52 @@
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.6675392670157068,
+            "y": 0.8835820895522388,
+            "uniqueID": "17f2dd76-46d4-4358-b21a-dd231bd71d86",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "dded5bcb-b45f-4518-886e-cc50d63247d3"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 0.2
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.555628272251309,
+            "y": 0.7343283582089553,
+            "uniqueID": "dded5bcb-b45f-4518-886e-cc50d63247d3",
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": "a2c53bd4-8c28-439c-95c4-2806bdf318f4"
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": "a89227d3-017b-4a06-8d15-6d6bd5bceb22"
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Input",
+            "name": "Winkelhöhe",
+            "x": 0.025384615384615384,
+            "y": 0.9701492537313434,
+            "uniqueID": "c094db6e-df57-4cab-814c-2826980109bb",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
         }
     ],
     "allConnectors": [
@@ -656,10 +677,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 5",
+            "ap2Name": "Shape 1",
             "ap2Primary": false,
             "ap1ID": "a2c53bd4-8c28-439c-95c4-2806bdf318f4",
-            "ap2ID": "76fb1594-e3c0-4b88-9e09-df47f5e2bc62"
+            "ap2ID": "dded5bcb-b45f-4518-886e-cc50d63247d3"
         },
         {
             "ap1Name": "geometry",
@@ -677,10 +698,31 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 7",
+            "ap2Name": "Shape 2",
             "ap2Primary": false,
             "ap1ID": "a89227d3-017b-4a06-8d15-6d6bd5bceb22",
+            "ap2ID": "dded5bcb-b45f-4518-886e-cc50d63247d3"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 8",
+            "ap2Primary": false,
+            "ap1ID": "17f2dd76-46d4-4358-b21a-dd231bd71d86",
             "ap2ID": "76fb1594-e3c0-4b88-9e09-df47f5e2bc62"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "dded5bcb-b45f-4518-886e-cc50d63247d3",
+            "ap2ID": "17f2dd76-46d4-4358-b21a-dd231bd71d86"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "height",
+            "ap2Primary": false,
+            "ap1ID": "c094db6e-df57-4cab-814c-2826980109bb",
+            "ap2ID": "17f2dd76-46d4-4358-b21a-dd231bd71d86"
         }
     ],
     "unitsKey": "MM",
