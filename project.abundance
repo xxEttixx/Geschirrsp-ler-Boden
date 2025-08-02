@@ -22,7 +22,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "118a54f3-7899-49ca-99ca-1af54047e56a"
+                    "ioValue": "76fb1594-e3c0-4b88-9e09-df47f5e2bc62"
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -30,8 +30,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.2650523560209424,
-            "y": 0.13432835820895522,
+            "x": 0.2264397905759162,
+            "y": 0.15223880597014927,
             "uniqueID": "eea29472-db3f-4b57-906d-142def70f746",
             "ioValues": [
                 {
@@ -48,8 +48,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.7159685863874345,
-            "y": 0.8686567164179105,
+            "x": 0.5896596858638743,
+            "y": 0.591044776119403,
             "uniqueID": "118a54f3-7899-49ca-99ca-1af54047e56a",
             "ioValues": [
                 {
@@ -66,8 +66,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.42081151832460734,
-            "y": 0.17611940298507464,
+            "x": 0.36910994764397903,
+            "y": 0.19402985074626863,
             "uniqueID": "e542a023-4a47-46d1-a4c6-a10ef2474119",
             "ioValues": [
                 {
@@ -84,8 +84,8 @@
         {
             "atomType": "Molecule",
             "name": "Ausschnitt",
-            "x": 0.26767015706806285,
-            "y": 0.42388059701492536,
+            "x": 0.22185863874345552,
+            "y": 0.43582089552238806,
             "uniqueID": "b9717d10-a789-4754-939e-3036640f4968",
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -314,8 +314,8 @@
         {
             "atomType": "Color",
             "name": "Color",
-            "x": 0.424738219895288,
-            "y": 0.4149253731343283,
+            "x": 0.36518324607329844,
+            "y": 0.4298507462686567,
             "uniqueID": "395dedc9-3833-463e-aa57-ae8dd171fc1c",
             "ioValues": [
                 {
@@ -329,8 +329,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.6073298429319371,
-            "y": 0.29253731343283584,
+            "x": 0.5013089005235603,
+            "y": 0.3253731343283582,
             "uniqueID": "49d13667-244c-46eb-bbcb-e2f3bb404ecb",
             "ioValues": [
                 {
@@ -348,7 +348,7 @@
             "atomType": "Input",
             "name": "Brett Dicke",
             "x": 0.025384615384615384,
-            "y": 0.8716417910447761,
+            "y": 0.6686567164179105,
             "uniqueID": "9eca8b6d-cebb-4ef1-b672-ef10b1437977",
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -357,8 +357,8 @@
         {
             "atomType": "Molecule",
             "name": "Eisenwinkel",
-            "x": 0.25785340314136124,
-            "y": 0.6805970149253732,
+            "x": 0.2604712041884817,
+            "y": 0.8597014925373134,
             "uniqueID": "6e2c1001-e68c-4a3f-b0a0-2cc95ca9dcdc",
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -370,31 +370,131 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "6297006a-bb27-42f3-ada5-fbea323f7f04",
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "2bcf569b-61e9-4c8e-abd3-0f51eac654b7"
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.2356020942408377,
+                    "x": 0.206151832460733,
                     "y": 0.4417910447761194,
                     "uniqueID": "e80ce0c5-1d9a-43b1-b597-b99ab5ff595e",
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 6.5
                         },
                         {
                             "name": "y length",
-                            "ioValue": 10
+                            "ioValue": 8.5
                         }
                     ],
                     "description": "Creates a new rectangle."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.4842931937172775,
+                    "y": 0.4298507462686567,
+                    "uniqueID": "2bcf569b-61e9-4c8e-abd3-0f51eac654b7",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "f3e113c2-5870-48a2-986d-31c8b015555f"
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 0.2
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                },
+                {
+                    "atomType": "Color",
+                    "name": "Color",
+                    "x": 0.32460732984293195,
+                    "y": 0.4328358208955224,
+                    "uniqueID": "f3e113c2-5870-48a2-986d-31c8b015555f",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "e80ce0c5-1d9a-43b1-b597-b99ab5ff595e"
+                        }
+                    ],
+                    "description": "Changes the color of the shape.",
+                    "selectedColorIndex": 22
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": "e80ce0c5-1d9a-43b1-b597-b99ab5ff595e",
+                    "ap2ID": "f3e113c2-5870-48a2-986d-31c8b015555f"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": "2bcf569b-61e9-4c8e-abd3-0f51eac654b7",
+                    "ap2ID": "6297006a-bb27-42f3-ada5-fbea323f7f04"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": "f3e113c2-5870-48a2-986d-31c8b015555f",
+                    "ap2ID": "2bcf569b-61e9-4c8e-abd3-0f51eac654b7"
+                }
+            ],
             "fileTypeVersion": 1,
             "compiledBom": {}
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.699607329842932,
+            "y": 0.6955223880597015,
+            "uniqueID": "76fb1594-e3c0-4b88-9e09-df47f5e2bc62",
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": "118a54f3-7899-49ca-99ca-1af54047e56a"
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.5405759162303665,
+            "y": 0.8656716417910448,
+            "uniqueID": "a2c53bd4-8c28-439c-95c4-2806bdf318f4",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": ""
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
@@ -407,10 +507,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
+            "ap2Name": "Shape 1",
             "ap2Primary": false,
             "ap1ID": "118a54f3-7899-49ca-99ca-1af54047e56a",
-            "ap2ID": "d7070de1-c07a-4126-9f76-5b4a4bfb1ff4"
+            "ap2ID": "76fb1594-e3c0-4b88-9e09-df47f5e2bc62"
         },
         {
             "ap1Name": "geometry",
@@ -446,7 +546,15 @@
             "ap2Primary": false,
             "ap1ID": "9eca8b6d-cebb-4ef1-b672-ef10b1437977",
             "ap2ID": "118a54f3-7899-49ca-99ca-1af54047e56a"
-        }
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "76fb1594-e3c0-4b88-9e09-df47f5e2bc62",
+            "ap2ID": "d7070de1-c07a-4126-9f76-5b4a4bfb1ff4"
+        },
+        null
     ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
